@@ -1,0 +1,47 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0 0 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 10px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.donate-btn {
+    display: inline-block;
+    /* padding: 10px 20px; */
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    /* background-color: #0066cc; */
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.donate-btn:hover {
+    /* background-color: #0055b3; */
+}

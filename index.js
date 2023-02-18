@@ -24,10 +24,13 @@ app.get('/api/data', (req, res) => {
 // Define the homepage route
 app.get('/', (req, res) => {
     // Render the homepage template with the link and PayPal button
-    res.render('home', {
-        portfolioLink: 'https://theglitch1.github.io',
+    res.render('index', {
+        stuff: "stuuf herrre ",
+        portfolioLink: "https://theglitch1.github.io",
         paypalButton: 'https://www.paypal.com/donate/buttons',
         paypalMeLink: 'https://paypal.me/lievyasin',
+        donationButtonGif: 'https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif',
+        paynowImg: 'https://www.paypalobjects.com/webstatic/en_US/i/buttons/buy-logo-large.png',
     });
 });
 
