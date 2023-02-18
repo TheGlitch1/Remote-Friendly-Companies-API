@@ -15,6 +15,9 @@ app.get('/api/data', (req, res) => {
         .on('end', () => res.json(results));
 });
 
+app.get('/', (req, res) => {
+    res.send('Api is runinng.../api/data');
+})
 
 // passing the port if env variable is set up or default 3000
 const port = process.env.PORT || 3000;
