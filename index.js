@@ -4,6 +4,8 @@ const fs = require('fs');
 
 const app = express();
 
+// app.use(express.json());
+app.use(express.static('public'));
 // Create route
 app.get('/api/data', (req, res) => {
     const results = [];
@@ -15,9 +17,19 @@ app.get('/api/data', (req, res) => {
         .on('end', () => res.json(results));
 });
 
+// app.get('/', (req, res) => {
+//     res.send('Api is runinng.../api/data');
+// })
+
+// Define the homepage route
 app.get('/', (req, res) => {
-    res.send('Api is runinng.../api/data');
-})
+    // Render the homepage template with the link and PayPal button
+    res.render('home', {
+        portfolioLink: 'https://theglitch1.github.io',
+        paypalButton: 'https://www.paypal.com/donate/buttons',
+        paypalMeLink: 'https://paypal.me/lievyasin',
+    });
+});
 
 // passing the port if env variable is set up or default 3000
 const port = process.env.PORT || 3000;
