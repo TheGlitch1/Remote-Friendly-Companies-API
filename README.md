@@ -57,5 +57,3 @@ jsonCopy code
 - **`401 Unauthorized`**: If authentication credentials are required but missing or invalid.
 - **`404 Not Found`**: If the requested resource is not found.
 - **`500 Internal Server Error`**: If the server encounters an error while processing the request.
-
-This is just one example of how you could describe your API. You may want to add more details, such as specific regions or countries, or additional fields for each company. Additionally, you may want to consider implementing authentication and rate limiting to protect your API and ensure that it's used appropriately.
