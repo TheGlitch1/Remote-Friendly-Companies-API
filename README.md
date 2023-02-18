@@ -25,19 +25,19 @@ jsonCopy code
       "id": 1,
       "name": "GitHub",
       "website": "https://github.com/",
-      "region": ["Global"]
+      "region": "Dublin; Ireland; USA"
     },
     {
       "id": 2,
       "name": "Automattic",
       "website": "https://automattic.com/",
-      "region": ["Global"]
+      "region": "Worldwide"
     },
     {
       "id": 3,
       "name": "Basecamp",
       "website": "https://basecamp.com/",
-      "region": ["Global"]
+      "region": "France"
     },
     ...
   ]
